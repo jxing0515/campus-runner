@@ -14,10 +14,22 @@
 
 ```bash
 npm install
-npm run dev:h5            # 开发服务器
+npm run dev:h5            # 开发服务器 → http://127.0.0.1:5180/（见 vite.config.js，与管理端 5173 区分）
 npm run build:h5          # 生产构建 → dist/build/h5
 npm run build:mp-weixin   # 微信小程序 → dist/build/mp-weixin（用微信开发者工具导入）
 ```
+
+### 浏览器实时联调（H5 跑真后端）
+
+```bash
+# 终端 1：后端          cd backend && python manage.py runserver 127.0.0.1:8000
+# 终端 2：H5 开发服务器 cd miniapp && npm run dev:h5      → http://127.0.0.1:5180/
+# 终端 3：自动登录并截图
+cd miniapp && node scripts/verify-live.mjs
+```
+
+`scripts/verify-live.mjs` 用 Playwright（Chromium）真实登录 `s001`/`r001` 并逐页截图到 `miniapp/screenshots/`，
+同时收集页面 JS 异常。注意：登录接口按 **IP+账号 5 次/分钟** 限流，短时间内重复跑脚本会返回 40001，等 1 分钟即可。
 
 ### 后端地址
 
