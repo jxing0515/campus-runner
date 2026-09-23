@@ -1,0 +1,138 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/login/login",
+      "style": { "navigationBarTitleText": "登录 / 注册" }
+    },
+    {
+      "path": "pages/student/home",
+      "style": { "navigationBarTitleText": "校园互助跑腿" }
+    },
+    {
+      "path": "pages/student/publish",
+      "style": { "navigationBarTitleText": "发布需求" }
+    },
+    {
+      "path": "pages/student/pay",
+      "style": { "navigationBarTitleText": "模拟支付" }
+    },
+    {
+      "path": "pages/student/orders",
+      "style": { "navigationBarTitleText": "我的订单" }
+    },
+    {
+      "path": "pages/student/order-detail",
+      "style": { "navigationBarTitleText": "订单详情" }
+    },
+    {
+      "path": "pages/student/review",
+      "style": { "navigationBarTitleText": "评价" }
+    },
+    {
+      "path": "pages/student/appeal",
+      "style": { "navigationBarTitleText": "提交申诉" }
+    },
+    {
+      "path": "pages/student/credit",
+      "style": { "navigationBarTitleText": "信用中心" }
+    },
+    {
+      "path": "pages/student/messages",
+      "style": { "navigationBarTitleText": "消息通知" }
+    },
+
+    {
+      "path": "pages/runner/certification",
+      "style": { "navigationBarTitleText": "跑腿员认证" }
+    },
+    {
+      "path": "pages/runner/hall",
+      "style": { "navigationBarTitleText": "待接单大厅" }
+    },
+    {
+      "path": "pages/runner/task-detail",
+      "style": { "navigationBarTitleText": "任务详情" }
+    },
+    {
+      "path": "pages/runner/pickup",
+      "style": { "navigationBarTitleText": "取件打卡" }
+    },
+    {
+      "path": "pages/runner/deliver",
+      "style": { "navigationBarTitleText": "送达打卡" }
+    },
+    {
+      "path": "pages/runner/tasks",
+      "style": { "navigationBarTitleText": "我的任务" }
+    },
+    {
+      "path": "pages/runner/income",
+      "style": { "navigationBarTitleText": "收入统计" }
+    },
+    {
+      "path": "pages/runner/withdraw",
+      "style": { "navigationBarTitleText": "提现申请" }
+    },
+    {
+      "path": "pages/runner/credit",
+      "style": { "navigationBarTitleText": "信用中心" }
+    },
+    {
+      "path": "pages/runner/appeal",
+      "style": { "navigationBarTitleText": "申诉" }
+    },
+
+    {
+      "path": "pages/mine/mine",
+      "style": { "navigationBarTitleText": "个人中心" }
+    },
+    {
+      "path": "pages/mine/password",
+      "style": { "navigationBarTitleText": "修改密码" }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "校园互助跑腿",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f5f6f8"
+  },
+  "tabBar": {
+    "color": "#909399",
+    "selectedColor": "#2979ff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/student/home",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/student/orders",
+        "text": "订单",
+        "iconPath": "static/tabbar/order.png",
+        "selectedIconPath": "static/tabbar/order-active.png"
+      },
+      {
+        "pagePath": "pages/student/messages",
+        "text": "消息",
+        "iconPath": "static/tabbar/message.png",
+        "selectedIconPath": "static/tabbar/message-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/tabbar/mine.png",
+        "selectedIconPath": "static/tabbar/mine-active.png"
+      }
+    ]
+  }
+}

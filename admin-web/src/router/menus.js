@@ -1,0 +1,17 @@
+export const menus = [
+  { path: '/dashboard', title: '数据看板', icon: 'Odometer' },
+  { path: '/certifications', title: '认证审核', icon: 'Postcard' },
+  { path: '/users', title: '用户管理', icon: 'User' },
+  { path: '/demands', title: '需求监控', icon: 'Document' },
+  { path: '/orders', title: '订单监控', icon: 'Tickets' },
+  { path: '/fund-flows', title: '支付流水', icon: 'Money' },
+  { path: '/escrow', title: '托管监控', icon: 'Lock' },
+  { path: '/settlements', title: '结算流水', icon: 'Wallet' },
+  { path: '/refunds', title: '退款管理', icon: 'RefreshLeft' },
+  { path: '/withdrawals', title: '提现审核', icon: 'CreditCard' },
+  { path: '/rules', title: '规则配置', icon: 'SetUp', perm: 'super_admin' },
+  { path: '/appeals', title: '争议仲裁', icon: 'ScaleToOriginal' },
+  { path: '/stats', title: '数据统计', icon: 'TrendCharts' },
+  { path: '/announcements', title: '公告发布', icon: 'Bell' },
+  { path: '/logs', title: '操作日志', icon: 'List' },
+]

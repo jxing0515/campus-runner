@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; }
+body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  color: #303133;
+  background: #f5f7fa;
+  font-size: 14px;
+}
+.page { padding: 16px; }
+.page-card { background: #fff; border: 1px solid #ebeef5; border-radius: 4px; padding: 16px; }
+.filter-bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
+.filter-bar .grow { flex: 1; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.pager { display: flex; justify-content: flex-end; margin-top: 14px; }
+.muted { color: #909399; font-size: 12px; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-bottom: 14px; }
+.stat-grid .label { color: #909399; font-size: 13px; }
+.stat-grid .value { font-size: 22px; font-weight: 600; margin-top: 6px; }
+.charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 14px; }
+.chart { height: 300px; }
