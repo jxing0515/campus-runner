@@ -1,0 +1,639 @@
+openapi: 3.0.3
+info:
+  title: 校园互助跑腿系统 API
+  version: 1.0.0
+paths:
+  /api/v1/admin/announcements:
+    get:
+      operationId: v1_admin_announcements_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: v1_admin_announcements_create
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/announcements/{id}:
+    delete:
+      operationId: v1_admin_announcements_destroy
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - v1
+      responses:
+        '204':
+          description: No response body
+  /api/v1/admin/appeals:
+    get:
+      operationId: v1_admin_appeals_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/appeals/{id}/arbitrate:
+    post:
+      operationId: v1_admin_appeals_arbitrate_create
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/certifications:
+    get:
+      operationId: v1_admin_certifications_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/certifications/{id}/audit:
+    post:
+      operationId: v1_admin_certifications_audit_create
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/demands:
+    get:
+      operationId: v1_admin_demands_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/escrow:
+    get:
+      operationId: v1_admin_escrow_retrieve
+      description: 托管监控：平台账户 vs Σ托管中流水。
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/fund-flows:
+    get:
+      operationId: v1_admin_fund_flows_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/fund-flows/export:
+    get:
+      operationId: v1_admin_fund_flows_export_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/operation-logs:
+    get:
+      operationId: v1_admin_operation_logs_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/operation-logs/export:
+    get:
+      operationId: v1_admin_operation_logs_export_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/orders:
+    get:
+      operationId: v1_admin_orders_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/orders/{order_no}:
+    get:
+      operationId: v1_admin_orders_retrieve_2
+      parameters:
+      - in: path
+        name: order_no
+        schema:
+          type: string
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/orders/{order_no}/resolve:
+    post:
+      operationId: v1_admin_orders_resolve_create
+      description: 异常订单人工处理：确认完成（结算）或取消（退款）。
+      parameters:
+      - in: path
+        name: order_no
+        schema:
+          type: string
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/reconcile:
+    post:
+      operationId: v1_admin_reconcile_create
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/refunds:
+    get:
+      operationId: v1_admin_refunds_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/rules:
+    get:
+      operationId: v1_admin_rules_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: v1_admin_rules_create
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/rules/{id}:
+    put:
+      operationId: v1_admin_rules_update
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/settlements:
+    get:
+      operationId: v1_admin_settlements_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/stats/credit-distribution:
+    get:
+      operationId: v1_admin_stats_credit_distribution_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/stats/orders-trend:
+    get:
+      operationId: v1_admin_stats_orders_trend_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/stats/overview:
+    get:
+      operationId: v1_admin_stats_overview_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/users:
+    get:
+      operationId: v1_admin_users_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/users/{id}/ban:
+    post:
+      operationId: v1_admin_users_ban_create
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/users/{id}/credit:
+    post:
+      operationId: v1_admin_users_credit_create
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/withdrawals:
+    get:
+      operationId: v1_admin_withdrawals_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/admin/withdrawals/{id}/audit:
+    post:
+      operationId: v1_admin_withdrawals_audit_create
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/announcements:
+    get:
+      operationId: v1_announcements_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/auth/login:
+    post:
+      operationId: v1_auth_login_create
+      tags:
+      - v1
+      security:
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/v1/auth/logout:
+    post:
+      operationId: v1_auth_logout_create
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/auth/me:
+    get:
+      operationId: v1_auth_me_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/auth/password:
+    post:
+      operationId: v1_auth_password_create
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/auth/refresh:
+    post:
+      operationId: v1_auth_refresh_create
+      tags:
+      - v1
+      security:
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/v1/auth/register:
+    post:
+      operationId: v1_auth_register_create
+      tags:
+      - v1
+      security:
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/v1/credit/logs:
+    get:
+      operationId: v1_credit_logs_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/credit/me:
+    get:
+      operationId: v1_credit_me_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/files:
+    post:
+      operationId: v1_files_create
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/files/{id}:
+    get:
+      operationId: v1_files_retrieve
+      description: 受控访问：凭证/学生证仅本人与管理员可下载，不开放裸 MEDIA 目录。
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/notifications:
+    get:
+      operationId: v1_notifications_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/notifications/{id}/read:
+    post:
+      operationId: v1_notifications_read_create
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/notifications/read-all:
+    post:
+      operationId: v1_notifications_read_all_create
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders:
+    get:
+      operationId: v1_orders_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: v1_orders_create
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders/{order_no}:
+    get:
+      operationId: v1_orders_retrieve_2
+      parameters:
+      - in: path
+        name: order_no
+        schema:
+          type: string
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders/{order_no}/accept:
+    post:
+      operationId: v1_orders_accept_create
+      parameters:
+      - in: path
+        name: order_no
+        schema:
+          type: string
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders/{order_no}/appeal:
+    post:
+      operationId: v1_orders_appeal_create
+      parameters:
+      - in: path
+        name: order_no
+        schema:
+          type: string
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders/{order_no}/cancel:
+    post:
+      operationId: v1_orders_cancel_create
+      parameters:
+      - in: path
+        name: order_no
+        schema:
+          type: string
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders/{order_no}/confirm:
+    post:
+      operationId: v1_orders_confirm_create
+      parameters:
+      - in: path
+        name: order_no
+        schema:
+          type: string
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders/{order_no}/deliver:
+    post:
+      operationId: v1_orders_deliver_create
+      parameters:
+      - in: path
+        name: order_no
+        schema:
+          type: string
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders/{order_no}/pay:
+    post:
+      operationId: v1_orders_pay_create
+      parameters:
+      - in: path
+        name: order_no
+        schema:
+          type: string
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders/{order_no}/pickup:
+    post:
+      operationId: v1_orders_pickup_create
+      parameters:
+      - in: path
+        name: order_no
+        schema:
+          type: string
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders/{order_no}/review:
+    post:
+      operationId: v1_orders_review_create
+      parameters:
+      - in: path
+        name: order_no
+        schema:
+          type: string
+        required: true
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders/available:
+    get:
+      operationId: v1_orders_available_retrieve
+      description: 待接单大厅：自行判断，不抢单。
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/orders/reviews/received:
+    get:
+      operationId: v1_orders_reviews_received_retrieve
+      description: 我收到的评价（跑腿员/学生通用）。
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/runner/certification:
+    get:
+      operationId: v1_runner_certification_retrieve
+      description: 跑腿员认证：提交后待审核，驳回可改资料重新提交。
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: v1_runner_certification_create
+      description: 跑腿员认证：提交后待审核，驳回可改资料重新提交。
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/runner/income:
+    get:
+      operationId: v1_runner_income_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/runner/withdrawals:
+    get:
+      operationId: v1_runner_withdrawals_retrieve
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: v1_runner_withdrawals_create
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+  /api/v1/stats/me:
+    get:
+      operationId: v1_stats_me_retrieve
+      description: 个人中心统计（学生/跑腿员通用）。
+      tags:
+      - v1
+      responses:
+        '200':
+          description: No response body
+components: {}

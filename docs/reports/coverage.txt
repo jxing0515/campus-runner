@@ -1,0 +1,61 @@
+.......................................                                  [100%]
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.12.10-final-0 _______________
+
+Name                                           Stmts   Miss  Cover
+------------------------------------------------------------------
+apps\__init__.py                                   0      0   100%
+apps\accounts\__init__.py                          0      0   100%
+apps\accounts\api.py                             122     53    57%
+apps\accounts\authentication.py                   15      4    73%
+apps\accounts\migrations\0001_initial.py           8      0   100%
+apps\accounts\migrations\0002_initial.py           7      0   100%
+apps\accounts\migrations\__init__.py               0      0   100%
+apps\accounts\models.py                           53      5    91%
+apps\accounts\perms.py                            23      2    91%
+apps\accounts\validators.py                       10      1    90%
+apps\common\__init__.py                            0      0   100%
+apps\common\admin_api.py                         319    178    44%
+apps\common\api.py                                63     18    71%
+apps\common\errors.py                             32      1    97%
+apps\common\locks.py                              47      5    89%
+apps\common\management\__init__.py                 0      0   100%
+apps\common\management\commands\__init__.py        0      0   100%
+apps\common\management\commands\beat.py           27     27     0%
+apps\common\management\commands\run_tasks.py      14     14     0%
+apps\common\management\commands\seed_demo.py     116    116     0%
+apps\common\migrations\0001_initial.py             7      0   100%
+apps\common\migrations\__init__.py                 0      0   100%
+apps\common\models.py                             61      1    98%
+apps\common\notify.py                             13      1    92%
+apps\common\pagination.py                          5      0   100%
+apps\common\renderers.py                          15      2    87%
+apps\common\rules.py                              35      2    94%
+apps\common\schema.py                              6      6     0%
+apps\common\schemas.py                            44      7    84%
+apps\common\serializers.py                        84      0   100%
+apps\common\tasks.py                             164     16    90%
+apps\common\urls.py                                7      0   100%
+apps\credit\__init__.py                            0      0   100%
+apps\credit\api.py                                17      7    59%
+apps\credit\migrations\0001_initial.py             7      0   100%
+apps\credit\migrations\__init__.py                 0      0   100%
+apps\credit\models.py                             28      0   100%
+apps\credit\services.py                           71      2    97%
+apps\finance\__init__.py                           0      0   100%
+apps\finance\api.py                               32     13    59%
+apps\finance\migrations\0001_initial.py            7      0   100%
+apps\finance\migrations\__init__.py                0      0   100%
+apps\finance\models.py                            78      0   100%
+apps\finance\services.py                         144     15    90%
+apps\orders\__init__.py                            0      0   100%
+apps\orders\api.py                               101     29    71%
+apps\orders\migrations\0001_initial.py             7      0   100%
+apps\orders\migrations\__init__.py                 0      0   100%
+apps\orders\models.py                            110      1    99%
+apps\orders\services.py                          293     63    78%
+apps\orders\state.py                              41      4    90%
+------------------------------------------------------------------
+TOTAL                                           2233    593    73%
+Coverage HTML written to dir ../docs/reports/coverage
+39 passed in 46.83s
